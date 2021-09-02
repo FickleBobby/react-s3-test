@@ -16,12 +16,12 @@
  * @type {Cypress.PluginConfig}
  */
 const injectDevServer = require("@cypress/react/plugins/react-scripts");
-const codeCoverage = require("@cypress/code-coverage/task");
+//const codeCoverage = require("@cypress/code-coverage/task");
 const cypressOtp = require("cypress-otp");
 
 module.exports = (on, config) => {
   injectDevServer(on, config);
-  codeCoverage(on, config);
+  //codeCoverage(on, config);
   on("task", { generateOTP: cypressOtp });
   return config;
 };
