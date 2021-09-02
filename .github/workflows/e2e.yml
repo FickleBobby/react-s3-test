@@ -19,7 +19,7 @@ jobs:
           CYPRESS_baseUrl: https://trainee.tis.nhs.uk
           CYPRESS_password: ${{ secrets.E2E_TEST_PASS }}
           CYPRESS_username: ${{ secrets.E2E_TEST_USER }}
-          CYPRESS_username: ${{ secrets.E2E_TEST_SECRET }}
+          CYPRESS_secret: ${{ secrets.E2E_TEST_SECRET }}
           CYPRESS_coverage: false
           browser: chrome
 
